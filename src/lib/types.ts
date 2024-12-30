@@ -5,8 +5,13 @@ export interface NavItem {
  href: string;
 }
 
-export interface HeroImg {
- src: StaticImageData;
+export interface Img {
+ src: StaticImageData | string;
  alt: string;
- href: string;
+ href?: string;
+}
+
+export interface BlockItem extends Img {
+ title: string;
+ description: string;
 }

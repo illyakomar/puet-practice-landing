@@ -13,6 +13,9 @@
 }
 
 @layer components {
+ .section {
+  @apply mb-[200px] max-lg:mb-[100px] max-md:mb-[50px];
+ }
  .button {
   @apply text-center py-[18px] px-[54px] bg-primary text-background rounded-xl font-bold leading-[25px] shadow-3xl relative top-0 hover:shadow-4xl hover:top-1 transition-all duration-[0.3s] cursor-pointer;
  }

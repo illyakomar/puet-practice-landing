@@ -31,7 +31,11 @@ export default function Hero() {
    </div>
    <div className='flex-[0_1_50%] z-20 grid grid-cols-3 grid-rows-2 gap-[27px]'>
     {heroImg.map((img, index) => (
-     <Link href={img.href} key={index} className='block img-item'>
+     <Link
+      href={img.href || '#'}
+      key={index}
+      className='block img-item animate-float'
+     >
       <Image
        src={img.src}
        alt={img.alt}

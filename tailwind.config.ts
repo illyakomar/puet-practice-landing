@@ -29,6 +29,15 @@ export default {
     '4xl': '0 30px 60px 0 rgba(68, 117, 242, 0.5)',
     img: '0 15px 30px 0 rgba(0, 0, 0, 0.25)',
    },
+   keyframes: {
+    float: {
+     '0%, 100%': { transform: 'translateY(0)' },
+     '50%': { transform: 'translateY(-10px)' },
+    },
+   },
+   animation: {
+    float: 'float 5s ease-in-out infinite',
+   },
   },
  },
  plugins: [],
