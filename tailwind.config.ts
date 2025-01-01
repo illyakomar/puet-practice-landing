@@ -24,6 +24,9 @@ export default {
     sectionHeader: 'clamp(2rem, 1.3151rem + 2.1918vw, 3rem)',
     title: 'clamp(2.625rem, 1.1695rem + 4.6575vw, 4.75rem)',
    },
+   lineHeight: {
+    relaxed: '187.5%',
+   },
    boxShadow: {
     '3xl': '0 30px 60px 0 rgba(68, 117, 242, 0.25)',
     '4xl': '0 30px 60px 0 rgba(68, 117, 242, 0.5)',

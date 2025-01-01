@@ -1,11 +1,16 @@
 import Container from '@/components/layout/container';
-import { heroImg } from '@/data/data';
-import Image from 'next/image';
+import { heroItems } from '@/data/data';
+import { Img } from '@/lib/types';
 import Link from 'next/link';
+import HeroItem from './heroItem';
 
 export default function Hero() {
+ const heroImgs = heroItems.map((hero: Img, index: number) => {
+  return <HeroItem key={index} {...hero} />;
+ });
+
  return (
-  <Container className='flex gap-8 container-background max-lg:flex-col'>
+  <Container className='flex gap-x-8 gap-y-11 container-background max-lg:flex-col'>
    <div className='flex-[0_1_50%] grid gap-y-8 sm:justify-items-start items-center'>
     <h1 className='text-heading text-title font-extrabold leading-[117%] tracking-[-2px]'>
      Search & review your{' '}
@@ -30,21 +35,7 @@ export default function Hero() {
     </Link>
    </div>
    <div className='flex-[0_1_50%] z-20 grid grid-cols-3 grid-rows-2 gap-[27px]'>
-    {heroImg.map((img, index) => (
-     <Link
-      href={img.href || '#'}
-      key={index}
-      className='block img-item animate-float'
-     >
-      <Image
-       src={img.src}
-       alt={img.alt}
-       className='rounded-xl shadow-img'
-       quality={100}
-       priority
-      />
-     </Link>
-    ))}
+    {heroImgs}
    </div>
   </Container>
  );

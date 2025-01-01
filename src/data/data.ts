@@ -1,4 +1,7 @@
 import { BlockItem, Img, NavItem } from '@/lib/types';
+import Ahmad from '../../public/avatar/1.jpg';
+import Muhammad from '../../public/avatar/2.jpg';
+import Wahyu from '../../public/avatar/3.jpg';
 import DompetAyahSepatuIbu from '../../public/hero/DompetAyahSepatuIbu.jpg';
 import TalkingtoStrangers from '../../public/hero/TalkingtoStrangers.jpg';
 import TheMidnightLibrary from '../../public/hero/TheMidnightLibrary.jpg';
@@ -26,7 +29,7 @@ export const navItems: NavItem[] = [
  },
 ];
 
-export const heroImg: Img[] = [
+export const heroItems: Img[] = [
  {
   src: DompetAyahSepatuIbu,
   alt: 'Dompet Ayah Sepatu Ibu',
@@ -49,7 +52,7 @@ export const heroImg: Img[] = [
  },
 ];
 
-export const featuresImg: BlockItem[] = [
+export const featuresItems: BlockItem[] = [
  {
   src: Search,
   alt: 'Search book',
@@ -73,7 +76,7 @@ export const featuresImg: BlockItem[] = [
  },
 ];
 
-export const servicesImg: BlockItem[] = [
+export const servicesItems: BlockItem[] = [
  {
   src: '/services/Service.jpg ',
   alt: 'Service',
@@ -87,5 +90,29 @@ export const servicesImg: BlockItem[] = [
   title: 'Quick Book Rentals: Dive into Reading Instantly',
   description:
    'Discover instant literary delight. Access a vast library, borrow your favorite reads, and dive into captivating stories within minutes. Reading made quick and easy, just a click away! Unlock a world of stories effortlessly. Browse genres, choose, rent in minutes. Seamlessly manage your reading adventures with our intuitive platform~',
+ },
+];
+
+export const reviewsItems: BlockItem[] = [
+ {
+  src: Ahmad,
+  alt: 'Ahmad',
+  title: 'Ahmad Saugi',
+  description:
+   'Engaging plot, vivid characters; a captivating read that lingers in your thoughts.',
+ },
+ {
+  src: Muhammad,
+  alt: 'Muhammad',
+  title: 'Muhammad Alfian',
+  description:
+   'Thought-provoking narrative and rich prose. A must-read for any avid book lover!',
+ },
+ {
+  src: Wahyu,
+  alt: 'Wahyu',
+  title: 'Wahyu Amirulloh',
+  description:
+   'Immersive storytelling! An enriching literary experience worth savoring and sharing.',
  },
 ];
